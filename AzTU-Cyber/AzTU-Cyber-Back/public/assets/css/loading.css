@@ -1,0 +1,29 @@
+.loading{
+    font-size:0 !important;
+    width:30px !important;
+    height:30px !important;
+    margin: auto !important;
+    border-radius:15px !important;
+    padding:0 !important;
+    border:3px solid #0665d0 !important;
+    border-bottom:3px solid rgba(255,255,255,0.0) !important;
+    border-left:3px solid rgba(255,255,255,0.0) !important;
+    background-color:transparent !important;
+    animation-name: rotateAnimation !important;
+    -webkit-animation-name: wk-rotateAnimation !important;
+    animation-duration: 1s !important;
+    -webkit-animation-duration: 1s !important;
+    animation-delay: 0.2s !important;
+    -webkit-animation-delay: 0.2s !important;
+    animation-iteration-count: infinite !important;
+    -webkit-animation-iteration-count: infinite !important;
+}
+
+@keyframes rotateAnimation {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes wk-rotateAnimation {
+    0%   {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}

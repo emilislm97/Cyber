@@ -1,0 +1,352 @@
+:root {
+  --bg-color-container: #e5e5e5;
+  --bg-color-second-header: #1c1c1c;
+
+  --color-primary: #fff;
+  --color-secondary: #1c1c1c;
+  --color-white: #fff;
+  --color-black: #1c1c1c;
+  --color-blue: #007aff;
+  --color-grey: #848484;
+}
+
+:root[data-theme="dark"] {
+  --bg-color-container: #18191a;
+
+  --bg-color-second-header: #848484;
+  /* --color-primary: #1c1c1c; */
+  --color-primary: #292a2c;
+
+  --color-secondary: #fff;
+}
+.forum-section {
+  min-height: 100vh;
+  background-color: transparent;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.forum-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* FORUM HEADER */
+
+.forum-header {
+  width: 100%;
+  height: 15vh;
+  background-color: var(--color-primary);
+  background-color: #000022;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='824' height='824' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke-opacity='0.63'%3E%3Cg stroke='%23026' stroke-width='17'%3E%3Cline x1='-8' y1='-8' x2='808' y2='808'/%3E%3Cline x1='-8' y1='792' x2='808' y2='1608'/%3E%3Cline x1='-8' y1='-808' x2='808' y2='8'/%3E%3C/g%3E%3Cg stroke='%23002163' stroke-width='16'%3E%3Cline x1='-8' y1='767' x2='808' y2='1583'/%3E%3Cline x1='-8' y1='17' x2='808' y2='833'/%3E%3Cline x1='-8' y1='-33' x2='808' y2='783'/%3E%3Cline x1='-8' y1='-783' x2='808' y2='33'/%3E%3C/g%3E%3Cg stroke='%23002060' stroke-width='15'%3E%3Cline x1='-8' y1='742' x2='808' y2='1558'/%3E%3Cline x1='-8' y1='42' x2='808' y2='858'/%3E%3Cline x1='-8' y1='-58' x2='808' y2='758'/%3E%3Cline x1='-8' y1='-758' x2='808' y2='58'/%3E%3C/g%3E%3Cg stroke='%23001f5c' stroke-width='14'%3E%3Cline x1='-8' y1='67' x2='808' y2='883'/%3E%3Cline x1='-8' y1='717' x2='808' y2='1533'/%3E%3Cline x1='-8' y1='-733' x2='808' y2='83'/%3E%3Cline x1='-8' y1='-83' x2='808' y2='733'/%3E%3C/g%3E%3Cg stroke='%23001e59' stroke-width='13'%3E%3Cline x1='-8' y1='92' x2='808' y2='908'/%3E%3Cline x1='-8' y1='692' x2='808' y2='1508'/%3E%3Cline x1='-8' y1='-108' x2='808' y2='708'/%3E%3Cline x1='-8' y1='-708' x2='808' y2='108'/%3E%3C/g%3E%3Cg stroke='%23001d56' stroke-width='12'%3E%3Cline x1='-8' y1='667' x2='808' y2='1483'/%3E%3Cline x1='-8' y1='117' x2='808' y2='933'/%3E%3Cline x1='-8' y1='-133' x2='808' y2='683'/%3E%3Cline x1='-8' y1='-683' x2='808' y2='133'/%3E%3C/g%3E%3Cg stroke='%23001c53' stroke-width='11'%3E%3Cline x1='-8' y1='642' x2='808' y2='1458'/%3E%3Cline x1='-8' y1='142' x2='808' y2='958'/%3E%3Cline x1='-8' y1='-158' x2='808' y2='658'/%3E%3Cline x1='-8' y1='-658' x2='808' y2='158'/%3E%3C/g%3E%3Cg stroke='%23001b4f' stroke-width='10'%3E%3Cline x1='-8' y1='167' x2='808' y2='983'/%3E%3Cline x1='-8' y1='617' x2='808' y2='1433'/%3E%3Cline x1='-8' y1='-633' x2='808' y2='183'/%3E%3Cline x1='-8' y1='-183' x2='808' y2='633'/%3E%3C/g%3E%3Cg stroke='%23001a4c' stroke-width='9'%3E%3Cline x1='-8' y1='592' x2='808' y2='1408'/%3E%3Cline x1='-8' y1='192' x2='808' y2='1008'/%3E%3Cline x1='-8' y1='-608' x2='808' y2='208'/%3E%3Cline x1='-8' y1='-208' x2='808' y2='608'/%3E%3C/g%3E%3Cg stroke='%23001949' stroke-width='8'%3E%3Cline x1='-8' y1='567' x2='808' y2='1383'/%3E%3Cline x1='-8' y1='217' x2='808' y2='1033'/%3E%3Cline x1='-8' y1='-233' x2='808' y2='583'/%3E%3Cline x1='-8' y1='-583' x2='808' y2='233'/%3E%3C/g%3E%3Cg stroke='%23001846' stroke-width='7'%3E%3Cline x1='-8' y1='242' x2='808' y2='1058'/%3E%3Cline x1='-8' y1='542' x2='808' y2='1358'/%3E%3Cline x1='-8' y1='-558' x2='808' y2='258'/%3E%3Cline x1='-8' y1='-258' x2='808' y2='558'/%3E%3C/g%3E%3Cg stroke='%23001743' stroke-width='6'%3E%3Cline x1='-8' y1='267' x2='808' y2='1083'/%3E%3Cline x1='-8' y1='517' x2='808' y2='1333'/%3E%3Cline x1='-8' y1='-533' x2='808' y2='283'/%3E%3Cline x1='-8' y1='-283' x2='808' y2='533'/%3E%3C/g%3E%3Cg stroke='%2300163f' stroke-width='5'%3E%3Cline x1='-8' y1='292' x2='808' y2='1108'/%3E%3Cline x1='-8' y1='492' x2='808' y2='1308'/%3E%3Cline x1='-8' y1='-308' x2='808' y2='508'/%3E%3Cline x1='-8' y1='-508' x2='808' y2='308'/%3E%3C/g%3E%3Cg stroke='%2300153c' stroke-width='4'%3E%3Cline x1='-8' y1='467' x2='808' y2='1283'/%3E%3Cline x1='-8' y1='317' x2='808' y2='1133'/%3E%3Cline x1='-8' y1='-333' x2='808' y2='483'/%3E%3Cline x1='-8' y1='-483' x2='808' y2='333'/%3E%3C/g%3E%3Cg stroke='%23001439' stroke-width='3'%3E%3Cline x1='-8' y1='342' x2='808' y2='1158'/%3E%3Cline x1='-8' y1='442' x2='808' y2='1258'/%3E%3Cline x1='-8' y1='-458' x2='808' y2='358'/%3E%3Cline x1='-8' y1='-358' x2='808' y2='458'/%3E%3C/g%3E%3Cg stroke='%23001336' stroke-width='2'%3E%3Cline x1='-8' y1='367' x2='808' y2='1183'/%3E%3Cline x1='-8' y1='417' x2='808' y2='1233'/%3E%3Cline x1='-8' y1='-433' x2='808' y2='383'/%3E%3Cline x1='-8' y1='-383' x2='808' y2='433'/%3E%3C/g%3E%3Cg stroke='%23013' stroke-width='1'%3E%3Cline x1='-8' y1='392' x2='808' y2='1208'/%3E%3Cline x1='-8' y1='-408' x2='808' y2='408'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.fh-background {
+  width: 100%;
+  height: 100%;
+  /* background-image: url('../../assets/1.jpeg'); */
+  background-size: cover;
+  position: absolute;
+}
+
+.find-question {
+  display: flex;
+  z-index: 2;
+}
+
+.find-question input{
+  color: var(--color-white);
+}
+
+.find-question input {
+  border: 1px solid var(--color-blue);
+  border-right: none;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  outline: none;
+  padding: 1rem 0 0.7rem 1.5rem;
+  background-color: transparent;
+}
+.find-question div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--color-blue);
+  border-left: none;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-size: 1.3rem;
+  color: var(--color-white);
+}
+
+.ask-question {
+  z-index: 2;
+}
+
+.btn-ask-ques {
+  padding: 1rem 5rem;
+  background-color: transparent;
+  border: 1px solid var(--color-blue);
+  border-radius: 1rem;
+  margin-right: 10rem;
+  color: var(--color-white);
+}
+
+/* FORUM MAIN */
+
+.forum-main {
+  display: flex;
+}
+
+/* FORUM FIRST SECTION */
+.forum__first-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: var(--color-primary);
+}
+
+/* FIRST - TOP SECTION */
+.forum__top-section {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-secondary);
+}
+.btn-ques {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+/*.btn-ques:first-child {*/
+/*  color: var(--color-blue);*/
+/*}*/
+
+.btn-ques{
+  color: var(--color-blue);
+    border: 1px solid #007aff;
+    border-radius: 10px;
+}
+
+/*  */
+.user-questions {
+  width: 100%;
+  height: auto;
+}
+
+.user-question {
+  padding: 1.5rem 2rem;
+  border: 1px solid var(--color-grey);
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.user-question__header a {
+  font-size: 1.8rem;
+  color: var(--color-secondary);
+}
+
+.user-question__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.user-question__profile {
+  display: flex;
+  align-items: center;
+}
+.user-question__profile__img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+.user-qeustion__profile__name {
+  font-size: 1.3rem;
+  color: var(--color-grey);
+}
+
+.user-question__others {
+  display: flex;
+  align-items: center;
+  color: var(--color-secondary);
+}
+.user-question__meta {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+.user-question__meta p {
+  margin-left: 0.5rem;
+}
+.user-question__date {
+  display: flex;
+  align-items: center;
+}
+.user-question__date p {
+  margin-left: 0.5rem;
+}
+
+/* SECOND SECTION */
+/* .forum__second-section {
+  background-color: var(--color-primary);
+  width: 50rem;
+  min-height: 100vh;
+  margin-left: 3rem;
+} */
+
+@media (max-width: 1150px) {
+  /* FORUM HEADER */
+
+  .forum-header {
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 2rem;
+  }
+
+  .find-question input {
+    padding: 1rem 0 0.7rem 1.5rem;
+    background-color: transparent;
+  }
+  .find-question div {
+    font-size: 1.1rem;
+  }
+
+  .btn-ask-ques {
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    margin-right: 10rem;
+  }
+
+  /* FORUM FIRST SECTION */
+  .forum__first-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+
+  /* FIRST - TOP SECTION */
+  .forum__top-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-secondary);
+  }
+
+  .btn-ques {
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  /*  */
+
+  .user-question {
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .user-question__header a {
+    font-size: 1.6rem;
+  }
+
+  .user-question__body {
+    margin-top: 1rem;
+  }
+
+  .user-question__profile__img {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  .user-qeustion__profile__name {
+    font-size: 1.15rem;
+  }
+}
+/*  --------------------- /*  --------------------- /*  --------------------- /*  --------------------- */
+
+@media (max-width: 768px) {
+  /* FORUM HEADER */
+
+  .forum-header {
+    height: 15vh;
+    margin-bottom: 1.5rem;
+  }
+
+  .find-question input {
+    padding: 0.7rem 0 0.5rem 1.2rem;
+  }
+  .find-question div {
+    font-size: 1rem;
+  }
+
+  .btn-ask-ques {
+    padding: 0.7rem 3rem;
+    margin-right: 7rem;
+  }
+
+  /* FIRST - TOP SECTION */
+  .forum__top-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-ques {
+    padding: 0.7rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  /*  */
+
+  .user-question {
+    padding: 1.5rem 2rem;
+  }
+
+  .user-question__header a {
+    font-size: 1.5rem;
+  }
+
+  .user-question__body {
+    margin-top: 1rem;
+  }
+
+  .user-question__profile__img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  .user-qeustion__profile__name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 386px) {
+  .forum-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20vh;
+  }
+
+  .btn-ask-ques {
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+}

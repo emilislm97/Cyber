@@ -1,0 +1,8 @@
+.error {
+    color: #e04f1a;
+    border-color: #e04f1a !important;
+    margin-top: 5px;
+}
+.valid {
+    border-color: green !important;
+}

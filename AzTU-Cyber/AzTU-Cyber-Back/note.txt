@@ -1,0 +1,6 @@
+Dasmix olan yerleri Admin yazmisam
+
+
+sosial sebekeler
+
+admin panelde jsde urller deyismelidi. globalda. port:5000 yazilib
